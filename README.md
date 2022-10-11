@@ -1,3 +1,5 @@
 # Dotfiles
 
-```home-manager switch -b backup --flake ~/dotfiles#user
+```
+home-manager switch -b backup --flake ~/dotfiles#user
+```
