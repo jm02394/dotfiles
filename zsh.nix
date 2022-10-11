@@ -19,6 +19,25 @@
         src = ./.;
         file = "zshrc.zsh";
       }
+      {
+        name = "zshqns";
+        src = ./.;
+        file = "zshrc.zsh";
+      }
+      {
+        name = "fast-syntax-highlighting";
+        src = pkgs.zsh-fast-syntax-highlighting;
+        file = "share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh";
+      }
+      {
+        name = "autosuggestions";
+        src = pkgs.zsh-autosuggestions;
+        file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
+      }
     ];
+
+    shellAliases = {
+      ls = "${pkgs.exa}/bin/exa";
+    };
   };
 }
