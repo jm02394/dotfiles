@@ -7,6 +7,7 @@
         bbenoist.nix
         sanaajani.taskrunnercode
         kamikillerto.vscode-colorize
+        jdinhlife.gruvbox
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
           name = "andromeda";
@@ -17,7 +18,7 @@
 
     userSettings = {
       "editor.formatOnSave" = true;
-      "workbench.colorTheme" = "Andromeda Italic Bordered";
+      "workbench.colorTheme" = "Gruvbox Dark Medium";
       "explorer.confirmDelete" = false;
 
       "[nix]"."editor.tabSize" = 2;
