@@ -1,6 +1,6 @@
 { lib, config, pkgs, ... }: 
 {
-  imports = [./i3.nix ./vscode.nix ./firefox.nix ./alacritty.nix ./zsh.nix];
+  imports = [./i3.nix ./vscode.nix ./firefox.nix ./alacritty.nix ./zsh.nix ./fonts.nix];
 
   programs.home-manager.enable = true;
 
