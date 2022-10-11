@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let 
-  termfont = [family = "MesloLGS Nerd Font";];
+  termfont = {family = "MesloLGS Nerd Font";};
 in {
   programs.alacritty = {
     enable = true;
