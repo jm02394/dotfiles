@@ -16,6 +16,7 @@
 
   programs.tmux = {
     enable = true;
+    prefix = "C-a";
     shell = config.home.sessionVariables.SHELL;
   };
   
