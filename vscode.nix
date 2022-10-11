@@ -5,6 +5,8 @@
 
     extensions = (with pkgs.vscode-extensions; [
         bbenoist.nix
+        sanaajani.taskrunnercode
+        kamikillerto.vscode-colorize
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
           name = "andromeda";
@@ -16,6 +18,9 @@
     userSettings = {
       "editor.formatOnSave" = true;
       "workbench.colorTheme" = "Andromeda Italic Bordered";
+      "explorer.confirmDelete" = false;
+
+      "[nix]"."editor.tabSize" = 2;
     };
   };
 }

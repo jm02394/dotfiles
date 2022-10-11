@@ -15,6 +15,9 @@ in {
         "${mod}+m" = "move workspace to output right";
 
         "Print" = "exec flameshot gui";
+
+        "XF86AudioRaiseVolume" = "exec pactl set-sink-volume 1 +5%";
+        "XF86AudioLowerVolume" = "exec pactl set-sink-volume 1 -5%";
       };
 
       window.hideEdgeBorders = "both";

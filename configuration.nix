@@ -51,8 +51,15 @@
   };
 
   # PulseAudo
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
+  hardware.pulseaudio = {
+    enable = true;
+    support32Bit = true;
+
+    extraConfig = ''
+      set-default-sink alsa_output.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00.analog-stereo-output
+      set-default-source alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00.analog-stereo-input
+    '';
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.user = {
