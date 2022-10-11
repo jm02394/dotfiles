@@ -13,6 +13,8 @@ in {
       keybindings = lib.mkOptionDefault {
         "${mod}+n" = "move workspace to output left";
         "${mod}+m" = "move workspace to output right";
+
+        "Print" = "exec flameshot gui";
       };
 
       window.hideEdgeBorders = "both";
