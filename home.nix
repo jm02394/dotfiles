@@ -1,6 +1,6 @@
 { lib, config, pkgs, ... }: 
 {
-  imports = [./i3.nix ./vscode.nix ./firefox.nix ./alacritty.nix ./zsh.nix ./fonts.nix];
+  imports = [./i3.nix ./vscode.nix ./firefox.nix ./alacritty.nix ./zsh.nix ./fonts.nix ./tmux.nix];
 
   programs.home-manager.enable = true;
 
@@ -13,12 +13,6 @@
 
   gtk.enable = true;
   gtk.gtk3.extraConfig = {"gtk-application-prefer-dark-theme" = "true";};
-
-  programs.tmux = {
-    enable = true;
-    prefix = "C-a";
-    shell = config.home.sessionVariables.SHELL;
-  };
   
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
              "discord" "vscode" "spotify" "spotify-unwrapped" "VCV-Rack"
