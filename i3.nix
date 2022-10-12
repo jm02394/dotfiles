@@ -118,7 +118,7 @@ in {
         {
           block = "time";
           interval = 1;
-          format = "%a %m/%d %r";
+          format = "%a %m/%d, %I:%M %p";
         }
       ];
     };
