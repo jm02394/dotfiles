@@ -18,7 +18,7 @@
 
     userSettings = {
       "editor.formatOnSave" = true;
-      "workbench.colorTheme" = "Gruvbox Dark Medium";
+      "workbench.colorTheme" = "Gruvbox Dark Soft";
       "explorer.confirmDelete" = false;
 
       "[nix]"."editor.tabSize" = 2;
