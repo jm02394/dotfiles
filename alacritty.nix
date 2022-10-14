@@ -43,6 +43,11 @@ in {
 
       colors.primary.background = "0x282828";
       colors.primary.foregroundground = "0xebdbb2";
+
+      cursor = {
+        style = "Beam";
+        thickness = 0.2;
+      };
     };
   };
 }

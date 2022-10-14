@@ -8,6 +8,9 @@
         sanaajani.taskrunnercode
         kamikillerto.vscode-colorize
         jdinhlife.gruvbox
+        rust-lang.rust-analyzer
+        bungcip.better-toml
+        vscjava.vscode-java-debug
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
           name = "andromeda";
@@ -18,8 +21,12 @@
 
     userSettings = {
       "editor.formatOnSave" = true;
-      "workbench.colorTheme" = "Gruvbox Dark Soft";
+      "editor.inlayHints.enabled" = "offUnlessPressed";
+      "colorize.languages" = ["nix"];
+      "workbench.colorTheme" = "Gruvbox Dark Medium";
       "explorer.confirmDelete" = false;
+
+      "git.confirmSync" = false;
 
       "[nix]"."editor.tabSize" = 2;
     };

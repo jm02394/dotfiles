@@ -15,14 +15,16 @@
   gtk.gtk3.extraConfig = {"gtk-application-prefer-dark-theme" = "true";};
   
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-             "discord" "vscode" "spotify" "spotify-unwrapped" "VCV-Rack"
-           ];
+              "discord" "vscode" "spotify" "spotify-unwrapped" "VCV-Rack"
+            ];
 
-  home.packages = with pkgs; [discord spotify neofetch pavucontrol rustc cargo pipes flameshot vcv-rack alejandra
+  home.packages = with pkgs; [jdk11 discord spotify neofetch pavucontrol rustc cargo pipes flameshot vcv-rack alejandra rustfmt gcc libsecret wineWowPackages.stable
                               (pkgs.python39.withPackages (ppkgs: [ppkgs.black]))];
 
   home.sessionVariables = {
     SHELL = "${pkgs.zsh}/bin/zsh";
+    /*OPENSSL_DIR = pkgs.openssl.dev;
+    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";*/
   };
 
   home.stateVersion = "22.05";
