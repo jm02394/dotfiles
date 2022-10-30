@@ -11,6 +11,7 @@
         rust-lang.rust-analyzer
         bungcip.better-toml
         vscjava.vscode-java-debug
+        redhat.java
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
           name = "andromeda";

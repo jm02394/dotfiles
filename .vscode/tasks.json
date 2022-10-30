@@ -12,6 +12,11 @@
             "label": "nixos-rebuild switch",
             "type": "shell",
             "command": "nixos-rebuild switch --use-remote-sudo"
+        },
+        {
+            "label": "nix flake update",
+            "type": "shell",
+            "command": "nix flake update --commit-lock-file"
         }
     ]
 }

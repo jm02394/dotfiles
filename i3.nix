@@ -4,6 +4,8 @@
   wallpaper =
     pkgs.nixos-artwork.wallpapers.simple-dark-gray-bottom.gnomeFilePath;
 in {
+  #services.picom.enable = true;
+
   xsession.windowManager.i3 = {
     enable = true;
 
