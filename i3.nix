@@ -1,4 +1,9 @@
-{ lib, pkgs, config, ... }: let
+{
+  lib,
+  pkgs,
+  config,
+  ...
+}: let
   mod = "Mod4";
 
   wallpaper =
@@ -30,7 +35,10 @@ in {
 
       startup = [
         {command = "xrandr --output DP-1 --off --output HDMI-1 --off --output DP-2 --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI-2 --mode 1920x1080 --pos 0x0 --rotate normal";}
-        {command = "sh ${./mouseconfig.sh}"; always = true;}
+        {
+          command = "sh ${./mouseconfig.sh}";
+          always = true;
+        }
         {
           always = true;
           command = "${pkgs.feh}/bin/feh --bg-fill ${wallpaper}";

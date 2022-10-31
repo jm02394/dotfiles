@@ -17,6 +17,11 @@
             "label": "nix flake update",
             "type": "shell",
             "command": "nix flake update --commit-lock-file"
-        }
+        },
+        {
+            "label": "alejandra",
+            "type": "shell",
+            "command": "alejandra ."
+        },
     ]
 }

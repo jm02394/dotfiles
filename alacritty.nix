@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
-let 
+{
+  config,
+  pkgs,
+  ...
+}: let
   termfont = {family = "MesloLGS Nerd Font";};
 in {
   programs.alacritty = {
